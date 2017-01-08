@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoriesCollectionViewCell" id="3K6-C8-YDq" customClass="CategoriesCollectionViewCell" customModule="UDMClient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="233" height="127"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Imagedefault" translatesAutoresizingMaskIntoConstraints="NO" id="wAr-ah-CuC">
+                        <rect key="frame" x="0.0" y="0.0" width="113" height="93"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wAr-ah-CuC" secondAttribute="bottom" constant="34" id="BHP-Q6-WmG"/>
+                <constraint firstItem="wAr-ah-CuC" firstAttribute="top" secondItem="3K6-C8-YDq" secondAttribute="top" id="Oiy-2U-PPk"/>
+                <constraint firstItem="wAr-ah-CuC" firstAttribute="leading" secondItem="3K6-C8-YDq" secondAttribute="leading" id="UoB-6D-Kvi"/>
+                <constraint firstAttribute="trailing" secondItem="wAr-ah-CuC" secondAttribute="trailing" constant="120" id="dxI-SU-Rk9"/>
+            </constraints>
+            <size key="customSize" width="233" height="127"/>
+            <connections>
+                <outlet property="myImage" destination="wAr-ah-CuC" id="nov-bT-5Gs"/>
+            </connections>
+            <point key="canvasLocation" x="514.5" y="389.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Imagedefault" width="311" height="207"/>
+    </resources>
+</document>

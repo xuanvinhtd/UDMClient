@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CourseDescriptionCell" rowHeight="260" id="mg9-JK-wnl" customClass="CourseDescriptionCell" customModule="UDMClient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mg9-JK-wnl" id="gC3-OL-yi0">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="259"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3D-VD-9ao">
+                        <rect key="frame" x="132" y="8" width="155" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CWF-ns-IIR">
+                        <rect key="frame" x="8" y="37" width="397" height="176"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3g-fa-TNc">
+                        <rect key="frame" x="186" y="221" width="47" height="30"/>
+                        <state key="normal" title="See All"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M3D-VD-9ao" firstAttribute="centerX" secondItem="gC3-OL-yi0" secondAttribute="centerX" id="7dz-Cv-MJD"/>
+                    <constraint firstItem="f3g-fa-TNc" firstAttribute="centerX" secondItem="gC3-OL-yi0" secondAttribute="centerX" id="Fcg-Uk-E0E"/>
+                    <constraint firstItem="M3D-VD-9ao" firstAttribute="top" secondItem="gC3-OL-yi0" secondAttribute="top" constant="8" id="HOk-Fv-Kqi"/>
+                    <constraint firstAttribute="bottom" secondItem="f3g-fa-TNc" secondAttribute="bottom" constant="8" id="IDh-2B-gVB"/>
+                    <constraint firstAttribute="trailing" secondItem="CWF-ns-IIR" secondAttribute="trailing" constant="13" id="vkV-JT-97N"/>
+                    <constraint firstItem="f3g-fa-TNc" firstAttribute="top" secondItem="CWF-ns-IIR" secondAttribute="bottom" constant="8" id="wvo-JM-IL3"/>
+                    <constraint firstItem="CWF-ns-IIR" firstAttribute="leading" secondItem="gC3-OL-yi0" secondAttribute="leading" constant="8" id="xBG-Ny-RjD"/>
+                    <constraint firstItem="CWF-ns-IIR" firstAttribute="top" secondItem="M3D-VD-9ao" secondAttribute="bottom" constant="8" id="xQg-9H-T4l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="buttonSeeAll" destination="f3g-fa-TNc" id="G4B-wP-LGa"/>
+                <outlet property="textViewContent" destination="CWF-ns-IIR" id="4kz-ep-nZz"/>
+                <outlet property="titleDescription" destination="M3D-VD-9ao" id="HVi-t1-HWA"/>
+            </connections>
+            <point key="canvasLocation" x="690" y="385"/>
+        </tableViewCell>
+    </objects>
+</document>

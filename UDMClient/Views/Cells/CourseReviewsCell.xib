@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CourseReviewsCell" rowHeight="242" id="1BK-cO-mar" customClass="CourseReviewsCell" customModule="UDMClient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="242"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1BK-cO-mar" id="k43-wu-pJ4">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="241"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blY-fO-i6k">
+                        <rect key="frame" x="135" y="8" width="64" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1z-IP-eli">
+                        <rect key="frame" x="144" y="184" width="47" height="49"/>
+                        <state key="normal" title="See All"/>
+                    </button>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="BBs-Ie-3bf">
+                        <rect key="frame" x="158" y="111" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="FU4-sS-lQF">
+                        <rect key="frame" x="8" y="36" width="319" height="140"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="vZO-KO-zQd"/>
+                        </constraints>
+                    </tableView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="blY-fO-i6k" firstAttribute="centerX" secondItem="k43-wu-pJ4" secondAttribute="centerX" id="DnB-ek-skh"/>
+                    <constraint firstItem="FU4-sS-lQF" firstAttribute="top" secondItem="blY-fO-i6k" secondAttribute="bottom" constant="8" id="Fdt-ix-ZPj"/>
+                    <constraint firstItem="m1z-IP-eli" firstAttribute="centerX" secondItem="k43-wu-pJ4" secondAttribute="centerX" id="Fx0-9j-UA2"/>
+                    <constraint firstItem="BBs-Ie-3bf" firstAttribute="centerX" secondItem="k43-wu-pJ4" secondAttribute="centerX" id="QA3-kl-bFu"/>
+                    <constraint firstItem="FU4-sS-lQF" firstAttribute="leading" secondItem="k43-wu-pJ4" secondAttribute="leading" constant="8" id="VS0-f2-Ujt"/>
+                    <constraint firstAttribute="trailing" secondItem="FU4-sS-lQF" secondAttribute="trailing" constant="8" id="Xha-Eb-bH5"/>
+                    <constraint firstAttribute="bottom" secondItem="m1z-IP-eli" secondAttribute="bottom" constant="8" id="d6l-YY-e8J"/>
+                    <constraint firstItem="m1z-IP-eli" firstAttribute="top" secondItem="FU4-sS-lQF" secondAttribute="bottom" constant="8" id="g07-jw-hiU"/>
+                    <constraint firstItem="BBs-Ie-3bf" firstAttribute="centerY" secondItem="k43-wu-pJ4" secondAttribute="centerY" id="iuc-fp-4Ef"/>
+                    <constraint firstItem="blY-fO-i6k" firstAttribute="top" secondItem="k43-wu-pJ4" secondAttribute="top" constant="8" id="tDh-hW-d6e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityIndicator" destination="BBs-Ie-3bf" id="UPJ-WE-NyX"/>
+                <outlet property="buttonSeeAll" destination="m1z-IP-eli" id="fEi-xu-H7t"/>
+                <outlet property="tableview" destination="FU4-sS-lQF" id="f9Q-je-Nhh"/>
+                <outlet property="titleReview" destination="blY-fO-i6k" id="lbk-Mq-6TP"/>
+            </connections>
+            <point key="canvasLocation" x="269.5" y="339"/>
+        </tableViewCell>
+    </objects>
+</document>

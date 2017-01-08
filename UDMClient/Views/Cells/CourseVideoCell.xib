@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CourseVideoCell" rowHeight="324" id="jRd-XQ-hvG" customClass="CourseVideoCell" customModule="UDMClient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="461" height="324"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jRd-XQ-hvG" id="e5T-OJ-t47">
+                <rect key="frame" x="0.0" y="0.0" width="461" height="323"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Imagedefault" translatesAutoresizingMaskIntoConstraints="NO" id="RX2-3y-NQx">
+                        <rect key="frame" x="0.0" y="0.0" width="461" height="184"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="184" id="kVi-Ry-CxK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label NAME" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6s-GE-w42">
+                        <rect key="frame" x="8" y="216" width="445" height="23"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heA-a6-vq3" userLabel="100 VND">
+                        <rect key="frame" x="8" y="286" width="29" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAJ-Z8-8hV">
+                        <rect key="frame" x="406" y="286" width="25" height="25"/>
+                        <state key="normal" image="Buy"/>
+                        <state key="selected" image="imageWhite_1"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-g2-kgG">
+                        <rect key="frame" x="8" y="192" width="42" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.51784205439999997" green="0.58159953360000005" blue="0.58617168659999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hnw-E4-Zge" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="8" y="247" width="140" height="24"/>
+                        <color key="tintColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" red="0.23018704349999999" green="0.77713233230000001" blue="0.31589496140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                <color key="value" red="0.23018704349999999" green="0.77713233230000001" blue="0.31589496140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="3.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUD-cX-Dmq">
+                        <rect key="frame" x="406" y="241" width="25" height="25"/>
+                        <state key="normal" image="Hearts"/>
+                        <state key="disabled" image="ImageWhite"/>
+                        <state key="selected" image="HeartsFill"/>
+                        <state key="highlighted" image="HeartsFill"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tdG-g2-kgG" firstAttribute="leading" secondItem="e5T-OJ-t47" secondAttribute="leading" constant="8" id="55g-Ec-dkK"/>
+                    <constraint firstItem="tdG-g2-kgG" firstAttribute="top" secondItem="RX2-3y-NQx" secondAttribute="bottom" constant="8" id="HcE-7N-eTK"/>
+                    <constraint firstItem="nAJ-Z8-8hV" firstAttribute="top" secondItem="XUD-cX-Dmq" secondAttribute="bottom" constant="20" id="I4j-DV-wZv"/>
+                    <constraint firstItem="heA-a6-vq3" firstAttribute="leading" secondItem="e5T-OJ-t47" secondAttribute="leading" constant="8" id="Phr-l8-eLB"/>
+                    <constraint firstAttribute="trailing" secondItem="nAJ-Z8-8hV" secondAttribute="trailing" constant="30" id="QwL-tv-0ak"/>
+                    <constraint firstAttribute="trailing" secondItem="XUD-cX-Dmq" secondAttribute="trailing" constant="30" id="Rch-oD-0mt"/>
+                    <constraint firstAttribute="trailing" secondItem="O6s-GE-w42" secondAttribute="trailing" constant="8" id="cVc-cL-65w"/>
+                    <constraint firstItem="nAJ-Z8-8hV" firstAttribute="top" secondItem="heA-a6-vq3" secondAttribute="top" id="eaY-X6-zBK"/>
+                    <constraint firstItem="Hnw-E4-Zge" firstAttribute="top" secondItem="O6s-GE-w42" secondAttribute="bottom" constant="8" id="eqX-IF-Ov5"/>
+                    <constraint firstItem="RX2-3y-NQx" firstAttribute="leading" secondItem="e5T-OJ-t47" secondAttribute="leading" id="gy5-yr-ojb"/>
+                    <constraint firstItem="Hnw-E4-Zge" firstAttribute="leading" secondItem="e5T-OJ-t47" secondAttribute="leading" constant="8" id="nZ8-jK-grU"/>
+                    <constraint firstAttribute="trailing" secondItem="RX2-3y-NQx" secondAttribute="trailing" id="rYh-sX-PSW"/>
+                    <constraint firstItem="O6s-GE-w42" firstAttribute="leading" secondItem="e5T-OJ-t47" secondAttribute="leading" constant="8" id="uEy-1c-oby"/>
+                    <constraint firstItem="RX2-3y-NQx" firstAttribute="top" secondItem="e5T-OJ-t47" secondAttribute="top" id="uhk-2I-LUq"/>
+                    <constraint firstAttribute="bottom" secondItem="heA-a6-vq3" secondAttribute="bottom" constant="16" id="veJ-6P-fKB"/>
+                    <constraint firstItem="O6s-GE-w42" firstAttribute="top" secondItem="tdG-g2-kgG" secondAttribute="bottom" constant="8" id="w3Z-Ax-Kzf"/>
+                    <constraint firstItem="heA-a6-vq3" firstAttribute="top" secondItem="Hnw-E4-Zge" secondAttribute="bottom" constant="15" id="wmB-wX-gzC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="addButton" destination="XUD-cX-Dmq" id="A9a-3N-oOI"/>
+                <outlet property="buttonBuy" destination="nAJ-Z8-8hV" id="wy2-OD-6Wf"/>
+                <outlet property="costSourse" destination="heA-a6-vq3" id="S5M-Kv-Anf"/>
+                <outlet property="courseName" destination="O6s-GE-w42" id="U2E-2r-Fdg"/>
+                <outlet property="courseVideo" destination="RX2-3y-NQx" id="7HK-Za-HU8"/>
+                <outlet property="labelPesonName" destination="tdG-g2-kgG" id="qB8-dO-pRH"/>
+                <outlet property="ratingControl" destination="Hnw-E4-Zge" id="bqh-fT-HJl"/>
+            </connections>
+            <point key="canvasLocation" x="753.5" y="369"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Buy" width="25" height="25"/>
+        <image name="Hearts" width="25" height="25"/>
+        <image name="HeartsFill" width="25" height="25"/>
+        <image name="ImageWhite" width="25" height="25"/>
+        <image name="Imagedefault" width="311" height="207"/>
+        <image name="imageWhite_1" width="25" height="25"/>
+    </resources>
+</document>
