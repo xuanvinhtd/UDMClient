@@ -167,4 +167,28 @@ struct UDMServer {
             completion(data: _data, msg: msg, success: success)
         }
     }
+    
+    func addWishList(withCoures id: String, completion: Results) {
+        let data = UDMDictionaryBuilder.share.addWishList(withCourseId: id)
+        self.executeRequestAPI(withData: data) { (data, msg ,success) in
+            guard let _data = data["data"] as? [[String: AnyObject]] else {
+                log.error("Not found data.")
+                completion(data: [[String: AnyObject]](), msg: "Not found data.", success: false)
+                return
+            }
+            completion(data: _data, msg: msg, success: success)
+        }
+    }
+    
+    func removeWishList(withCoures id: String, completion: Results) {
+        let data = UDMDictionaryBuilder.share.removeWishList(withCourseId: id)
+        self.executeRequestAPI(withData: data) { (data, msg ,success) in
+            guard let _data = data["data"] as? [[String: AnyObject]] else {
+                log.error("Not found data.")
+                completion(data: [[String: AnyObject]](), msg: "Not found data.", success: false)
+                return
+            }
+            completion(data: _data, msg: msg, success: success)
+        }
+    }
 }

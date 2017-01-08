@@ -214,6 +214,24 @@ struct UDMDictionaryBuilder {
                              offset: nil)
     }
     
+    func addWishList(withCourseId id: String) -> [String: String] {
+        return builderCourse(withModel: ModelName.Course.rawValue,
+                             funcName: FuncName.AddWishList.rawValue,
+                             token: UserManager.share.info.token,
+                             idCategory: nil, courseID: id,
+                             limit: nil,
+                             offset: nil)
+    }
+    
+    func removeWishList(withCourseId id: String) -> [String: String] {
+        return builderCourse(withModel: ModelName.Course.rawValue,
+                             funcName: FuncName.RemoveWishList.rawValue,
+                             token: UserManager.share.info.token,
+                             idCategory: nil, courseID: id,
+                             limit: nil,
+                             offset: nil)
+    }
+    
     // MARK: - Rating
     func builderRating(withTitle title: String?, description: String?, value: String?) -> [String: String]{
         var result: [String: String] = [:]

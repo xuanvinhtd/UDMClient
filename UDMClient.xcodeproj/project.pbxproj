@@ -53,6 +53,7 @@
 		4A7E52C01E14132A007CF62A /* UIViewController+UDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E52BB1E14132A007CF62A /* UIViewController+UDM.swift */; };
 		4AB20C221E22343F001A5DD1 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20C211E22343F001A5DD1 /* MainTableViewCell.swift */; };
 		4AB20C241E224863001A5DD1 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20C231E224863001A5DD1 /* Stream.swift */; };
+		4AC0810F1E229B75009B358C /* TeacherInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC0810E1E229B75009B358C /* TeacherInfoViewController.swift */; };
 		4AC9677A1E1E9CF30095A14B /* CourseVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC967791E1E9CF30095A14B /* CourseVideoCell.swift */; };
 		4AC9677C1E1E9D020095A14B /* CourseVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9677B1E1E9D020095A14B /* CourseVideoCell.xib */; };
 		4AC9677E1E1EA00F0095A14B /* CourseDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9677D1E1EA00F0095A14B /* CourseDescriptionCell.xib */; };
@@ -130,6 +131,7 @@
 		4A7E52BB1E14132A007CF62A /* UIViewController+UDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UDM.swift"; sourceTree = "<group>"; };
 		4AB20C211E22343F001A5DD1 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		4AB20C231E224863001A5DD1 /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		4AC0810E1E229B75009B358C /* TeacherInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherInfoViewController.swift; sourceTree = "<group>"; };
 		4AC967791E1E9CF30095A14B /* CourseVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseVideoCell.swift; sourceTree = "<group>"; };
 		4AC9677B1E1E9D020095A14B /* CourseVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseVideoCell.xib; sourceTree = "<group>"; };
 		4AC9677D1E1EA00F0095A14B /* CourseDescriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseDescriptionCell.xib; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				4A7E52971E14104C007CF62A /* ReviewsViewController.swift */,
 				4A7E52991E1410B9007CF62A /* CurriculumsViewController.swift */,
 				4A7E529B1E141170007CF62A /* CoursesInstructorViewController.swift */,
+				4AC0810E1E229B75009B358C /* TeacherInfoViewController.swift */,
 			);
 			name = Course;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				4ACA2DFE1E21E8DA008FD42F /* CourseReviewsCell.swift in Sources */,
 				4ACA2E101E21F3C6008FD42F /* CoursesLiveCell.swift in Sources */,
 				4A7E529E1E1411B8007CF62A /* CategoryViewController.swift in Sources */,
+				4AC0810F1E229B75009B358C /* TeacherInfoViewController.swift in Sources */,
 				4A7E52A81E1412FE007CF62A /* UDMDictionaryBuilder.swift in Sources */,
 				4A7E52AC1E1412FE007CF62A /* UserManager.swift in Sources */,
 				4ACA2E181E21F6D2008FD42F /* CategoriesCollectionViewCell.swift in Sources */,

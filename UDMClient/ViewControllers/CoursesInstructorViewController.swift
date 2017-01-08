@@ -9,5 +9,15 @@
 import UIKit
 
 final class CoursesInstructorViewController: UIViewController {
+    // MARK: - Properties
+    @IBOutlet weak var textViewContants: UITextView!
+    // MARK: - View life cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = "Instructor Info"
+    }
 }

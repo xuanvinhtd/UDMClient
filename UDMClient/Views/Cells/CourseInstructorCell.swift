@@ -26,7 +26,7 @@ final class CourseInstructorCell: UITableViewCell, Reusable {
         textViewContent.scrollEnabled = false
     }
     
-    func initData(with t: Teacher) {
+    private func initData(with t: Teacher) {
         nameIntructor.text = t.fullName
         textViewContent.text = t.descriptions
         avataIntructor.layer.cornerRadius = avataIntructor.frame.width / 2

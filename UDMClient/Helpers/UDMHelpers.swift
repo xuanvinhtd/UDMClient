@@ -192,6 +192,8 @@ enum FuncName: String {
     case RateCourses = "rate"
     case GetTeacherInfo = "get_teacherInfo"
     case UpdateProfile = "user_update"
+    case AddWishList = "add_wishList"
+    case RemoveWishList = "remove_wishList"
 }
 
 // MARK: - Model name
